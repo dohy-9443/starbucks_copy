@@ -163,4 +163,16 @@ document.addEventListener("DOMContentLoaded", () => {
   // 년도를  넣을 요소 검색
   const thisYear = document.querySelector(".this-year");
   thisYear.textContent = new Date().getFullYear();
+
+  // mobile-menu
+  const mobileMenu = document.querySelector(".m-menu");
+  const navBlack = document.querySelector(".m-nav-black");
+  const mboileMenuClose = document.querySelector(".m-nav-close");
+
+  mobileMenu.addEventListener("click", () => {
+    navBlack.classList.add("ppyong");
+  });
+  mboileMenuClose.addEventListener("click", () => {
+    navBlack.classList.remove("ppyong");
+  });
 });

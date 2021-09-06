@@ -7,11 +7,12 @@
 */
 
 body {
-  font-family: 'Nanum Gothic', sans-serif;
+  font-family: "Nanum Gothic", sans-serif;
   font-size: 16px;
   font-weight: 400;
   color: #333;
   line-height: 1.4;
+  overflow-x: hidden;
 }
 
 img {
@@ -51,36 +52,36 @@ img {
   color: #333;
 }
 .btn.brown {
-  color: #592B18;
-  border-color: #592B18;
+  color: #592b18;
+  border-color: #592b18;
 }
 .btn.brown:hover {
-  color: #FFF;
-  background-color: #592B18;
+  color: #fff;
+  background-color: #592b18;
 }
 .btn.gray {
   color: gray;
   border-color: gray;
 }
 .btn.gray:hover {
-  background-color: rgba(255,255,255,0.3);
+  background-color: rgba(255, 255, 255, 0.3);
   text-decoration: underline;
 }
 .btn.gold {
-  color: #D9AA8A;
-  border-color: #D9AA8A;
+  color: #d9aa8a;
+  border-color: #d9aa8a;
 }
 .btn.gold:hover {
   color: #fff;
-  background-color: #D9AA8A;
+  background-color: #d9aa8a;
 }
 .btn.white {
-  color: #FFF;
-  border-color: #FFF;
+  color: #fff;
+  border-color: #fff;
 }
 .btn.white:hover {
   color: #333;
-  background-color: #FFF;
+  background-color: #fff;
 }
 .btn.green {
   color: #fff;
@@ -110,7 +111,7 @@ img {
   transition-delay: 0s;
 }
 .show .back-to-position.delay-1 {
-  transition-delay: 0.3s; 
+  transition-delay: 0.3s;
 }
 .show .back-to-position.delay-2 {
   transition-delay: 0.6s;
@@ -132,7 +133,7 @@ header {
   position: fixed;
   top: 0;
   z-index: 9999999999;
-  background-color: #F6F5F0;
+  background-color: #f6f5f0;
   border-bottom: 1px solid #c8c8c8;
 }
 
@@ -169,7 +170,7 @@ header .subMenu ul.menu li {
   position: relative;
 }
 header .subMenu ul.menu li::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   height: 12px;
@@ -286,7 +287,7 @@ header .mainMenu .item .itemContents .contentsMenu > ul > li ul li:hover a {
 header .mainMenu .item .itemContents .contentsTexture {
   padding: 26px 0;
   font-size: 12px;
-  background-image: url('../images/main_menu_pattern.jpg');
+  background-image: url("../images/main_menu_pattern.jpg");
 }
 header .mainMenu .item .itemContents .contentsTexture h4 {
   color: #999;
@@ -294,7 +295,7 @@ header .mainMenu .item .itemContents .contentsTexture h4 {
 }
 header .mainMenu .item .itemContents .contentsTexture h4 a {
   color: #999;
-  font-weight: bold
+  font-weight: bold;
 }
 header .mainMenu .item .itemContents .contentsTexture p {
   color: #64a70b;
@@ -311,14 +312,18 @@ header .badgeCover .badge {
   border-radius: 10px;
   overflow: hidden;
   margin-bottom: 12px;
-  box-shadow: 4px 4px 10px rgba(0,0,0, 0.15);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.15);
   cursor: pointer;
+}
+
+.m-header {
+  display: none;
 }
 
 /* MAIN VISUAL */
 .visual {
   margin-top: 120px;
-  background: url('../images/2021_summer2_bg.jpg') no-repeat center /cover;
+  background: url("../images/2021_summer2_bg.jpg") no-repeat center / cover;
 }
 .visual .inner {
   height: 646px;
@@ -399,6 +404,7 @@ header .badgeCover .badge {
   width: 60%;
   height: 100%;
   background-color: #333;
+  overflow: hidden;
 }
 .notice .noticeLine .innerLeft h2 {
   margin-right: 20px;
@@ -447,7 +453,7 @@ header .badgeCover .badge {
   height: 62px;
   justify-content: center;
   align-items: center;
-  cursor: pointer; 
+  cursor: pointer;
 }
 .notice .noticeLine .innerRight .toggle-promotion .material-icons {
   font-size: 30px;
@@ -479,7 +485,7 @@ header .badgeCover .badge {
 .notice .promotion .swiper-container .swiper-slide {
   position: relative;
   opacity: 0.5;
-  transition: apacity 1s;
+  transition: opacity 1s;
 }
 .notice .promotion .swiper-container .swiper-slide-active {
   opacity: 1;
@@ -508,7 +514,7 @@ header .badgeCover .badge {
   width: 13px;
   height: 12px;
   margin-right: 6px;
-  background-image: url('../images/promotion_slide_pager.png');
+  background-image: url("../images/promotion_slide_pager.png");
   background-color: transparent;
   outline: none;
 }
@@ -516,7 +522,7 @@ header .badgeCover .badge {
   margin-right: 0;
 }
 .notice .promotion .swiper-pagination-bullet-active {
-  background-image: url('../images/promotion_slide_pager_on.png');
+  background-image: url("../images/promotion_slide_pager_on.png");
 }
 .notice .promotion .swiper-prev,
 .notice .promotion .swiper-next {
@@ -621,7 +627,7 @@ header .badgeCover .badge {
 /* MAIN BEAN */
 .mainBean {
   height: 573px;
-  background-image: url('../images/2021_summer2_bean_bg.jpg');
+  background-image: url("../images/2021_summer2_bean_bg.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -645,17 +651,18 @@ header .badgeCover .badge {
 /* BRAZIL */
 .brazil {
   height: 400px;
-  background-color: #E8CBAB;
+  background-color: #e8cbab;
   position: relative;
   overflow: hidden;
 }
 .brazil::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 214px;
   height: 130px;
   top: 15px;
-  background: url('../images/reserve_sundried_brazil_bg_shape.png') no-repeat center /cover;
+  background: url("../images/reserve_sundried_brazil_bg_shape.png") no-repeat
+    center / cover;
 }
 .brazil .inner {
   height: 100%;
@@ -680,7 +687,7 @@ header .badgeCover .badge {
 
 /* FAVORITE */
 .favorite {
-  background: url('../images/fav_prod_bg_new.jpg') no-repeat center /cover;
+  background: url("../images/fav_prod_bg_new.jpg") no-repeat center / cover;
   background-attachment: fixed;
 }
 .favorite .inner {
@@ -711,7 +718,7 @@ header .badgeCover .badge {
   display: flex;
 }
 .reserve .inner::before {
-  content: '';
+  content: "";
   position: absolute;
   width: 95%;
   height: 1px;
@@ -720,7 +727,7 @@ header .badgeCover .badge {
   left: 5%;
 }
 .reserve .inner::after {
-  content: '';
+  content: "";
   position: absolute;
   width: 1px;
   height: 64%;
@@ -753,7 +760,7 @@ header .badgeCover .badge {
 
 /* FIND STORE */
 .find-store {
-  background-image: url('../images/find_store_bg.jpg');
+  background-image: url("../images/find_store_bg.jpg");
 }
 .find-store .inner {
   height: 400px;
@@ -796,16 +803,16 @@ header .badgeCover .badge {
 
 /* FOOTER */
 footer {
-  background-color: #2C2A29;
+  background-color: #2c2a29;
   padding: 32px 0 35px;
 }
 footer .inner {
   display: flex;
 }
 footer .menu-cover::before {
-  content: '';
+  content: "";
   position: absolute;
-  background: url('../images/footer_logo.png') no-repeat center /cover;
+  background: url("../images/footer_logo.png") no-repeat center / cover;
   width: 14px;
   height: 142px;
   right: 0;
